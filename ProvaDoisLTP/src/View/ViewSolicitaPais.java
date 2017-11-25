@@ -7,7 +7,7 @@ public class ViewSolicitaPais {
 	private String pais;
 
 	public ViewSolicitaPais() {
-		pais = JOptionPane.showInputDialog("Infome o nome do Esporte: ");
+		pais = JOptionPane.showInputDialog("Infome o nome do Pais: ");
 	}
 
 	public String getPais() {

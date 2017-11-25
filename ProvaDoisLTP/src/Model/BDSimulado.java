@@ -3,6 +3,7 @@ package Model;
 import java.util.ArrayList;
 
 import Util.DocumentReader;
+import Util.DocumentWriter;
 
 public class BDSimulado {
 
@@ -65,6 +66,19 @@ public class BDSimulado {
 
 	public ArrayList<Medalha> getMedalhas() {
 		return medalhas;
+	}
+
+	public void gravarEsporte(Esporte e) {
+		this.esportes.add(e);
+
+		// Transforma artista em String
+		String esporte = e.getEsporte() + ";" + e.getModalidade();
+
+		// Instanciar o DocumentWriter
+		DocumentWriter dw = new DocumentWriter();
+
+		// Grava artista no arquivo
+		dw.write(fileEsporte, esporte);
 	}
 
 }

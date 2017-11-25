@@ -46,3 +46,4 @@ boxe;mosca
 boxe;mosca-ligeiro
 futebol;maculino
 futebol;feminino
+beisebol;masculino

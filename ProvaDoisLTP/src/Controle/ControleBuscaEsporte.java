@@ -31,7 +31,7 @@ public class ControleBuscaEsporte {
 		String e = "";
 		for (int i = 0; i < esportes.size(); i++) {
 
-			if (esportes.get(i).equals(nomeEsporte)) {
+			if (esportes.get(i).getEsporte().equalsIgnoreCase(nomeEsporte)) {
 				e += "Esporte: " + esportes.get(i).getEsporte() + " - " + "Modalidade: "
 						+ esportes.get(i).getModalidade();
 			}

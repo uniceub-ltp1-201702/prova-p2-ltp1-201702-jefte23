@@ -55,9 +55,8 @@ public class ControleDiferencaPaises {
 
 		}
 
-		diferençaOuroPais2 -= diferençaOuroPais1;
-		diferençaPrataPais2 -= diferençaPrataPais1;
-		diferençaBronzePais2 -= diferençaBronzePais1;
+		diferençaOuroPais2 = diferençaOuroPais2 - diferençaOuroPais1;
+		diferençaPrataPais2 = diferençaPrataPais1 - diferençaPrataPais2;
 
 		q += "A diferença de Medalha entre " + pais1 + " e " + pais2 + "\n - Qtd Medalhas de Ouro: "
 				+ diferençaOuroPais2 + "\n - Qtd Medalhas de Prata: " + diferençaPrataPais2

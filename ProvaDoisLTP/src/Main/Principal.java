@@ -1,10 +1,19 @@
 package Main;
 
+import java.io.IOException;
+
+import Controle.ControlePrincipal;
+import Model.BDSimulado;
+
 public class Principal {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	@SuppressWarnings("unused")
+	public static void main(String[] args) throws IOException {
+
+		BDSimulado bds = new BDSimulado();
+
+		// Criar objetos do ControlePrincipal
+		ControlePrincipal cp = new ControlePrincipal();
 
 	}
-
 }

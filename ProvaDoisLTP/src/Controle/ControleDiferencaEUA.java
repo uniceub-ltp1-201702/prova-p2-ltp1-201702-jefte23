@@ -32,7 +32,7 @@ public class ControleDiferencaEUA {
 
 		String q = "";
 		for (int i = 0; i < medalhas.size(); i++) {
-			if (medalhas.get(i).getPais().equals(pais)) {
+			if (medalhas.get(i).getPais().equalsIgnoreCase(pais)) {
 				diferençaOuro = medalhas.get(i).getQtdOuro() - medalhas.get(0).getQtdOuro();
 				diferençaPrata = medalhas.get(i).getQtdPrata() - medalhas.get(0).getQtdPrata();
 				diferençaBronze = medalhas.get(i).getQtdBronze() - medalhas.get(0).getQtdBronze();
